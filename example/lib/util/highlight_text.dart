@@ -30,7 +30,7 @@ class HighlightText extends StatefulWidget {
 }
 
 class _HighlightTextState extends State<HighlightText> {
-  TextStyle get style => widget.style ?? Theme.of(context).textTheme.bodyText2!;
+  TextStyle get style => widget.style ?? Theme.of(context).textTheme.bodyMedium!;
   TextStyle get activeStyle =>
       widget.activeStyle ?? style.copyWith(fontWeight: FontWeight.bold);
 
@@ -145,7 +145,7 @@ class Triplet<A, B, C> {
 
   @override
   int get hashCode {
-    return hashList([
+    return Object.hashAll([
       first,
       second,
       third,

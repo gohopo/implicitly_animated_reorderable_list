@@ -1,8 +1,7 @@
 import 'dart:async';
 import 'dart:math';
-import 'dart:ui';
 
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide AnimatedItemBuilder;
 import 'package:implicitly_animated_reorderable_list/src/custom_sliver_animated_list.dart';
 
 import 'src.dart';
